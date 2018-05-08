@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <section>
+        <header class="header">
+          <div class="row">
+            <div class="col-md-4">
+              <h1>Cars</h1>
+            </div>
+            <div class="col-md-6">
+
+            </div>
+            <div class="col-md-2">
+            <button type="button" class="btn btn-primary" (click)="redirectNewUserPage()">New Car</button>
+            </div>
+          </div>
+
+        </header>
+      </section>
+
+      <section class="main">
+
+        <table class="table">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>name</th>
+            <th>color</th>
+            <th>model</th>
+            <th>price</th>
+            <th></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let car of cars">
+            <th scope="row">{{car.id}}</th>
+            <td>{{car.name}}</td>
+            <td>{{car.color}}</td>
+            <td>{{car.model}}</td>
+            <td>{{car.price}}</td>
+            <td>
+            </td>
+          </tr>
+
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </div>
+</div>
